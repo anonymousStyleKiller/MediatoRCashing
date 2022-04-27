@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Core.Features.Queries;
 
-internal class GetCustomerQueryHandler : IRequestHandler<GetCustomerQuery, Customer>
+public class GetCustomerQueryHandler : IRequestHandler<GetCustomerQuery, Customer>
 {
     private readonly ICustomerService _customerService;
     public GetCustomerQueryHandler(ICustomerService customerService)
